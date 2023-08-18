@@ -21,7 +21,7 @@ int Search(int arr[],int n,int key){
 
 int main()
 {
-    int n
+    int n;
     cout<<"Enter the no. of elements you want in the array: ";
     cin>>n;
     int arr[n];
@@ -29,6 +29,11 @@ int main()
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
+    for(int i=0;i<n;i++){
+        cout<<"The array is: "<<arr[i]<<" ";
+    }
+
+
     int key;
     cout<<"Enter the element you want to search: "<<endl;
     cin>>key;
@@ -39,6 +44,8 @@ int main()
         
  return 0;
 }
+
+
 
 
 
