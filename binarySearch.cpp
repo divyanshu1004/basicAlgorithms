@@ -21,13 +21,22 @@ int Search(int arr[],int n,int key){
 
 int main()
 {
-    int even[8]={2,4,6,8,10,12,14,16};
-    int arr[5]={1,3,5,7,9};
-    int evenindex= Search(even,8,4);
-    int oddindex= Search(arr,5,9);
-    cout<<"Index of 4 is "<<evenindex<<endl;
-    cout<<"Idex of 9 is "<<oddindex<<endl;
-
+    int n
+    cout<<"Enter the no. of elements you want in the array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements of the array: "<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int key;
+    cout<<"Enter the element you want to search: "<<endl;
+    cin>>key;
+    int index= Search(arr,n,key);
+    
+    cout<<"Index of "<<key<<" is "<<index<<endl;
+    
+        
  return 0;
 }
 
