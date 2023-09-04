@@ -1,6 +1,7 @@
 #include <iostream>
-
 using namespace std;
+
+//This is the function for inserting an element x at index k, where arr is the array and n is the length of the array
 
 void insert(int arr[], int n, int k, int x) {
     for (int i = n - 1; i >= k; i--) {
